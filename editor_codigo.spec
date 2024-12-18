@@ -2,10 +2,10 @@
 
 
 a = Analysis(
-    ['editor_codigo.py'],
+    ['app\\editor_codigo.py'],
     pathex=[],
     binaries=[],
-    datas=[('config.ini', '.')],
+    datas=[('config.ini', '.'), ('open_icon.png', '.')],
     hiddenimports=[],
     hookspath=[],
     hooksconfig={},
@@ -29,7 +29,7 @@ exe = EXE(
     upx=True,
     upx_exclude=[],
     runtime_tmpdir=None,
-    console=False,
+    console=True,
     disable_windowed_traceback=False,
     argv_emulation=False,
     target_arch=None,
